@@ -51,8 +51,8 @@ def parse_args(args=None):  # : list[str]
 
     return singer_path, singer_name, dst_path
 
-def main():
-    singer_path, singer_name, dst_path = parse_args()
+def main(args):
+    singer_path, singer_name, dst_path = parse_args(args)
 
     singer_tree_path = singer_path + ".tree"
     if not os.path.exists(singer_tree_path):

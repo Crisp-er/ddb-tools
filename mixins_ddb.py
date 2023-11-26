@@ -375,8 +375,8 @@ def mixins_sta2vqm(src_ddi_bytes: bytes, output_stream: io.BufferedWriter, mixin
 
     return dst_ddi_bytes
 
-def main():
-    src_path, src_singer_name, mixins_path, mixins_singer_name, dst_path, mixins_item, args = parse_args()
+def main(args):
+    src_path, src_singer_name, mixins_path, mixins_singer_name, dst_path, mixins_item, args = parse_args(args)
 
     src_ddb_file = src_path + "/" + src_singer_name + ".ddb"
     if not os.path.exists(src_ddb_file):
