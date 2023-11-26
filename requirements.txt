@@ -1,1 +1,3 @@
-pip install pyyaml
+pyyaml
+wxpython
+pyinstaller
